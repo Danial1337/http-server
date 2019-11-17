@@ -56,6 +56,7 @@ public class HttpServer {
 
                     }
 
+
                     Map<String, String> requestParameters = parseRequestParameters(requestTarget);
 
                     String statusCode = requestParameters.getOrDefault("status", "200");
