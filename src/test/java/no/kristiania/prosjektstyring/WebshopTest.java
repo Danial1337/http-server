@@ -17,7 +17,7 @@ public class WebshopTest {
         JdbcDataSource dataSource = new JdbcDataSource();
         dataSource.setURL("jdbc:h2:mem:test");
 
-
+    // testPush
         Connection connection = dataSource.getConnection();
         connection.createStatement().executeUpdate(
                 "create table products (name varchar(100))"

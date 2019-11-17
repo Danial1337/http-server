@@ -15,7 +15,6 @@ import java.util.*;
 
 public class ProductDao {
     private DataSource dataSource;
-
    public ProductDao(DataSource dataSource){
     this.dataSource = dataSource;
     }
@@ -28,10 +27,9 @@ public class ProductDao {
             );
             statement.setString(1, productName);
             statement.executeUpdate();
-        }catch (SQLException e){
+        }catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 
     public List<String> listAll() throws SQLException {
