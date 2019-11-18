@@ -25,7 +25,7 @@ public class WebshopTest {
 
         ProductDao dao = new ProductDao(dataSource);
         String productName = pickOne(new String[]{"Apples", "Bananas", "Coconuts","Dates"});
-        dao.insertProduct(productName);
+
         assertThat(dao.listAll()).contains(productName);
 
     }
